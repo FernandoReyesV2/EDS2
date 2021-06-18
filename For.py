@@ -4,12 +4,12 @@ class For:
 
     def usoFor(self):
         #ciclo repetitivo de incrementos o decrementos se ejecuta por verdadero
-        nombre= "Daniel"
-        datos = ["Daniel", 50, True]
-        numeros = (2,4,6,8)
-        docente = {"nombre":"Daniel","edad":50,'fac':'faci'}
-        listaNotas = [(30,40),(20,40),(50,40)]
-        listaAlumnos = [{"nombre":"Erick","final":70},{"nombre":"Yady", "final":"60"},{"nombre":"Danny","final":90}]
+        #nombre= "Daniel"
+        #datos = ["Daniel", 50, True]
+        #numeros = (2,4,6,8)
+        #docente = {"nombre":"Daniel","edad":50,'fac':'faci'}
+        #listaNotas = [(30,40),(20,40),(50,40)]
+        #listaAlumnos = [{"nombre":"Erick","final":70},{"nombre":"Yady", "final":60},{"nombre":"Danny","final":90}]
         #se ejecuta desde inicio hasta el limite
         #for con range() o for con colecciones
         #for i in range(5): #rango (0,1,2,3,4)
@@ -58,16 +58,30 @@ class For:
         #    for nota in notas:
         #        acum=acum+nota
         #    print(acum/len(notas),end=" ")
-
-        print("\ndicionario de notas")
-        print(listaAlumnos)
-        for alumnos in listaAlumnos:
-            print(alumnos)
-            for clave,valor in alumnos.items():
-                print(clave, ":", valor, end=" ")
-            print()
-
-
+        #listaAlumnos = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},{"nombre": "Danny", "final": 90}]
+        #print("\ndicionario de notas")
+        #print(listaAlumnos)
+        #acum=0
+        #for alumnos in listaAlumnos:
+        #    print(alumnos)
+        #    for clave,valor in alumnos.items():
+        #        print(clave, ":", valor,type(valor), end=" ")
+        #       if clave == "final":
+        #           acum=acum+valor
+        #   print()
+        #print("Promedioo", acum/len(listaAlumnos))
+        listaNotas = [(30, 40, 10, 20), (20, 40, 50), (50, 40, 10),(10, 20)]
+        acum=0
+        cont=0
+        for notas in listaNotas:
+            print(notas)
+            acumparcial=0
+            for nota in notas:
+                acumparcial += nota
+            cont = cont +len(notas)
+            acum = acum + acumparcial
+            print("Total Parcial:{} Promedio Parcial:{}".format(acumparcial, acumparcial / len(nota))
+        print("TotalGeneral:{} PromGeneral:{}".format(acum,acum/cont))
 
 bucle = For()
 bucle.usoFor()
