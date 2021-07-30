@@ -45,12 +45,12 @@ class Cadena:
         return self.cadena1 + dato
 
 
-cadenaprueba = "Lo unico que hay en este mundo"
-cad = Cadena(cadenaprueba)
+#cadenaprueba = "Lo unico que hay en este mundo"
+#cad = Cadena(cadenaprueba)
 #print("primero: ",cad.recorrerCadena())
 # print("Buscar Caracter: ",cad.buscarCaracter("y"))
 #print("Retornar una lista con la posicion: ", cad.listaPosiciones("unico"))
-print("Retornar una lista con las palabras de la cadena: ", cad.listaPalabras())
-print("Insertar un dato: ",cad.insertarDato("mundo","PUTA"))
+#print("Retornar una lista con las palabras de la cadena: ", cad.listaPalabras())
+#print("Insertar un dato: ",cad.insertarDato("mundo","PUTA"))
 #print("Eliminar ocurrencias: ",cad.eliminarOcurrencias("hola"))
 # print("Concatenar: ",cad.concatenarCadena("jalabola"))
