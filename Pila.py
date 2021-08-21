@@ -1,5 +1,5 @@
 class Pila:
-    def __init__(self,tam):
+    def __init__(self,tam=4):
         self.lista = []
         self.size = tam
         self.top = 0
@@ -7,9 +7,10 @@ class Pila:
     def push(self,dato):
         if self.top < self.size:
             self.lista = self.lista + [dato]
-            self.top +=  1
+            self.top += 1
+            return True
         else:
-            print("La lista esta llena")
+            return False
 
     def pop(self):
         if self.empty():
@@ -25,7 +26,7 @@ class Pila:
             print("[{}]".format(self.lista[top]))
 
     def longitud(self):
-        return self.top
+        return self.top 
 
     def empty(self):
         if self.top == 0:
@@ -33,14 +34,14 @@ class Pila:
         else:
             return False
 
-pila1 = Pila(3)
-pila1.push(6)
-pila1.push(10)
-pila1.push(4)
-pila1.push(12)
+# pila1 = Pila()
+# pila1.push(6)
+# pila1.push(10)
+# pila1.push(4)
+# pila1.push(14)
+#print(pila1.pop())
+#print(pila1.pop())
 # print(pila1.pop())
 # print(pila1.pop())
-# print(pila1.pop())
-# print(pila1.pop())
-pila1.show()
-print(pila1.longitud())
+#pila1.show()
+# print(pila1.longitud())
